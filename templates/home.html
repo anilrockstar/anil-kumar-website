@@ -7,9 +7,6 @@
     <title>Anil Kumar Website</title>
     <link rel="stylesheet" href="static/style.css" />
     <link rel="stylesheet" href="static/mediaqueries.css" />
-    <style>
-      
-    </style>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -21,6 +18,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#Temperature">{{weather["current"]["temp_c"]}} °C</a></li>
+          <li><a href="#date">{{weather["location"]["localtime"]}}</a></li>
         </ul>
       </div>
     </nav>
@@ -371,6 +369,6 @@
       </nav>
       <p>Copyright &#169; 2023 Anil Kumar. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="static/script.js"></script>
   </body>
 </html>
